@@ -135,7 +135,14 @@ window.addEventListener('scroll', () => {
         }
     });
 
+    // Update desktop sidebar nav
     navLinks.forEach(link => {
+        link.classList.remove('active');
+        if (link.getAttribute('href').includes(current)) link.classList.add('active');
+    });
+
+    // Update mobile bottom nav
+    document.querySelectorAll('.mobile-nav-link').forEach(link => {
         link.classList.remove('active');
         if (link.getAttribute('href').includes(current)) link.classList.add('active');
     });
