@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MULENGA MUSAMBA // PORTFOLIO</title>
+    <meta name="description" content="Portfolio of Mulenga Musamba, a Final Year Computer Science Student at Copperbelt University specializing in Web Apps, Mobile Apps, and SaaS.">
+    <meta name="keywords" content="Mulenga Musamba, Software Engineer, Copperbelt University, Computer Science, Web Development, Mobile Apps, SaaS, Zambia">
+    
+    <!-- Open Graph / social sharing -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://mulenga-musamba.com/">
+    <meta property="og:title" content="MULENGA MUSAMBA // PORTFOLIO">
+    <meta property="og:description" content="Final Year CS Student at CBU. Builder of Web Apps, Mobile Apps, and SaaS.">
+    <meta property="og:image" content="favicon.png">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="favicon.png">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;700&family=Syncopate:wght@400;700&display=swap"
+        rel="stylesheet">
+    <!-- Icons -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="selection:bg-red-500 selection:text-white">
+    <!-- Boot Sequence / Loading Screen -->
+    <div id="boot-screen">
+        <div class="boot-log" id="boot-log"></div>
+        <div class="boot-progress">
+            <div class="boot-progress-bar" id="boot-progress-bar"></div>
+        </div>
+        <div class="text-[10px] text-accent mt-4 tracking-[0.3em] font-bold">SYSTEM_INITIALIZING...</div>
+    </div>
+
+    <canvas id="space-canvas"></canvas>
+    <div id="mouse-glow"></div>
+    <div class="crt-overlay"></div>
+
+    <!-- Layout Container -->
+    <div class="flex">
+
+        <!-- Sidebar Navigation -->
+        <aside
+            class="nav-sidebar fixed left-0 top-0 h-screen w-20 flex flex-col items-center py-12 border-r border-white/5 z-50 bg-black/40 backdrop-blur-md">
+            <div class="mb-20 text-accent font-bold text-xl tracking-tighter">MM</div>
+            <nav class="flex flex-col gap-12 rotate-[-90deg] origin-center mt-20">
+                <a href="#home" class="nav-link active">START</a>
+                <a href="#tools" class="nav-link">TECH</a>
+                <a href="#about" class="nav-link">INFO</a>
+                <a href="#projects" class="nav-link">WORK</a>
+                <a href="#contact" class="nav-link">PING</a>
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="flex-1 ml-0 md:ml-20 px-6 md:px-20 relative">
+
+            <!-- Hero -->
+            <section id="home" class="min-h-screen flex flex-col justify-center max-w-4xl">
+                <div class="mb-4 text-accent text-sm tracking-widest animate-pulse-slow font-bold">
+                    [ SPACE_ARCHIVE_ESTABLISHED ]
+                </div>
+                <h1 class="text-5xl md:text-7xl font-bold mb-4 leading-tight glitch-text">
+                    MULENGA <br />
+                    MUSAMBA
+                </h1>
+                <h2 class="text-xl md:text-3xl text-accent font-mono mb-10 tracking-[0.3em]">
+                    // SOFTWARE ENGINEER
+                </h2>
+                <p class="text-xl text-gray-400 max-w-xl mb-10 font-light leading-relaxed">
+                    Final year <span class="text-white">Computer Science student</span> at Copperbelt University. 
+                    Architecting <span class="text-white">robust digital systems</span> across the cosmic void.
+                </p>
+                <div class="flex flex-wrap gap-6 items-center">
+                    <button onclick="warpSpeed()" class="neon-button" aria-label="Warp speed to work section">WARP_TO_WORK</button>
+                    <a href="resume.pdf" download class="border border-accent/30 px-6 py-2 text-xs font-bold tracking-widest text-accent hover:bg-accent/10 transition-all" aria-label="Download CV">CV_DOWNLOAD</a>
+                    <div class="text-[10px] text-gray-500 font-mono tracking-widest uppercase">
+                        Vessel: Voyager-01 <br />
+                        Status: Cruising
+                    </div>
+                </div>
+            </section>
+
+            <!-- Tools & Tech Honeycomb Section -->
+            <section id="tools" class="py-40">
+                <div class="section-header">
+                    <h2 class="text-xl">01_TECH_STACK</h2>
+                    <div></div>
+                </div>
+
+                <div class="honeycomb-container">
+                    <div class="honeycomb-grid">
+                        <!-- Row 1 -->
+                        <div class="hex-item">
+                            <div class="hex-content">
+                                <i class="fa-solid fa-mobile-screen-button"></i>
+                                <span class="hex-label">Flutter</span>
+                            </div>
+                        </div>
+                        <div class="hex-item">
+                            <div class="hex-content">
+                                <i class="fa-brands fa-python"></i>
+                                <span class="hex-label">Python</span>
+                            </div>
+                        </div>
+                        <div class="hex-item">
+                            <div class="hex-content">
+                                <i class="fa-solid fa-bolt"></i>
+                                <span class="hex-label">FastAPI</span>
+                            </div>
+                        </div>
+                        <div class="hex-item">
+                            <div class="hex-content">
+                                <i class="fa-solid fa-leaf"></i>
+                                <span class="hex-label">Django</span>
+                            </div>
+                        </div>
+                        <!-- Row 2 -->
+                        <div class="hex-item">
+                            <div class="hex-content">
+                                <i class="fa-brands fa-js"></i>
+                                <span class="hex-label">JS</span>
+                            </div>
+                        </div>
+                        <div class="hex-item">
+                            <div class="hex-content">
+                                <i class="fa-brands fa-php"></i>
+                                <span class="hex-label">PHP</span>
+                            </div>
+                        </div>
+                        <div class="hex-item">
+                            <div class="hex-content">
+                                <i class="fa-brands fa-java"></i>
+                                <span class="hex-label">Java</span>
+                            </div>
+                        </div>
+                        <div class="hex-item">
+                            <div class="hex-content">
+                                <i class="fa-solid fa-circle-nodes"></i>
+                                <span class="hex-label">G_QL</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- About / Biometrics -->
+            <section id="about" class="py-40 max-w-4xl">
+                <div class="section-header">
+                    <h2 class="text-xl">02_BIOMETRICS</h2>
+                    <div></div>
+                </div>
+                <div class="grid md:grid-cols-2 gap-16">
+                    <div class="space-y-8 text-gray-300 text-lg font-light leading-relaxed">
+                        <p>
+                            I am a <span class="text-accent">final year Computer Science student</span> at Copperbelt University. 
+                            I design systems that survive the vacuum of scale, combining mathematical precision 
+                            with user-centric fluidity.
+                        </p>
+                        <p>
+                            From core <span class="text-white">Python/FastAPI</span> microservices to high-fidelity 
+                            <span class="text-white">Flutter</span> applications, I bridge the gap between complex 
+                            logic and seamless UI.
+                        </p>
+                    </div>
+                    <div class="glass-panel p-8 border-l-2 border-accent">
+                        <div class="text-xs text-accent mb-6 font-bold tracking-widest">// NAVIGATION_LOG</div>
+                        <ul class="space-y-6 font-mono text-xs">
+                            <li class="flex justify-between border-b border-white/5 pb-2">
+                                <span class="text-gray-500">PRIMARY:</span>
+                                <span class="text-white">PYTHON / JS</span>
+                            </li>
+                            <li class="flex justify-between border-b border-white/5 pb-2">
+                                <span class="text-gray-500">BACKEND:</span>
+                                <span class="text-accent">DJANGO / FAST</span>
+                            </li>
+                            <li class="flex justify-between border-b border-white/5 pb-2">
+                                <span class="text-gray-500">MOBILE:</span>
+                                <span>FLUTTER</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Projects -->
+            <section id="projects" class="py-40">
+                <div class="section-header">
+                    <h2 class="text-xl">02_MISSION_DATA</h2>
+                    <div></div>
+                </div>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Project 1: Web Apps -->
+                    <div class="glass-panel p-8 group relative overflow-hidden">
+                        <div class="absolute -right-4 -top-4 w-24 h-24 bg-accent/5 rounded-full blur-2xl group-hover:bg-accent/20 transition-all"></div>
+                        <div class="text-[10px] text-accent font-bold mb-12">REF: WEB-01</div>
+                        <h3 class="text-white mb-3 text-xl font-bold tracking-tight">DYNAMIC_WEB_SYSTEMS</h3>
+                        <p class="text-sm text-gray-400 mb-8 leading-relaxed">High-performance, responsive web applications built for the modern edge.</p>
+                        <div class="flex gap-4 text-[9px] font-bold text-gray-500 uppercase tracking-widest">
+                            <span>React</span> <span>Node.js</span> <span>FastAPI</span>
+                        </div>
+                    </div>
+
+                    <!-- Project 2: Mobile Apps -->
+                    <div class="glass-panel p-8 group relative overflow-hidden">
+                        <div class="absolute -right-4 -top-4 w-24 h-24 bg-accent/5 rounded-full blur-2xl group-hover:bg-accent/20 transition-all"></div>
+                        <div class="text-[10px] text-accent font-bold mb-12">REF: MOB-02</div>
+                        <h3 class="text-white mb-3 text-xl font-bold tracking-tight">MOBILE_FLIGHT_UNITS</h3>
+                        <p class="text-sm text-gray-400 mb-8 leading-relaxed">Cross-platform mobile experiences with fluid UI and robust offline capabilities.</p>
+                        <div class="flex gap-4 text-[9px] font-bold text-gray-500 uppercase tracking-widest">
+                            <span>Flutter</span> <span>Dart</span> <span>Firebase</span>
+                        </div>
+                    </div>
+
+                    <!-- Project 3: SaaS -->
+                    <div class="glass-panel p-8 group relative overflow-hidden">
+                        <div class="absolute -right-4 -top-4 w-24 h-24 bg-accent/5 rounded-full blur-2xl group-hover:bg-accent/20 transition-all"></div>
+                        <div class="text-[10px] text-accent font-bold mb-12">REF: SAS-03</div>
+                        <h3 class="text-white mb-3 text-xl font-bold tracking-tight">SAAS_ORBITALS</h3>
+                        <p class="text-sm text-gray-400 mb-8 leading-relaxed">Scalable software-as-a-service architectures designed for multi-tenant efficiency.</p>
+                        <div class="flex gap-4 text-[9px] font-bold text-gray-500 uppercase tracking-widest">
+                            <span>Next.js</span> <span>Docker</span> <span>PostgreSQL</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Skills Metrics -->
+            <section id="skills" class="py-40">
+                <div class="section-header">
+                    <h2 class="text-xl">04_ENGINE_SPECS</h2>
+                    <div></div>
+                </div>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+                    <div
+                        class="glass-panel p-10 flex flex-col items-center justify-center border-b-2 border-b-transparent hover:border-b-accent transition-all">
+                        <div class="text-3xl font-bold text-white mb-2">98</div>
+                        <div class="text-[10px] tracking-widest text-accent uppercase font-bold">Frontend</div>
+                    </div>
+                    <div
+                        class="glass-panel p-10 flex flex-col items-center justify-center border-b-2 border-b-transparent hover:border-b-accent transition-all">
+                        <div class="text-3xl font-bold text-white mb-2">92</div>
+                        <div class="text-[10px] tracking-widest text-accent uppercase font-bold">Architecture</div>
+                    </div>
+                    <div
+                        class="glass-panel p-10 flex flex-col items-center justify-center border-b-2 border-b-transparent hover:border-b-accent transition-all">
+                        <div class="text-3xl font-bold text-white mb-2">85</div>
+                        <div class="text-[10px] tracking-widest text-accent uppercase font-bold">Security</div>
+                    </div>
+                    <div
+                        class="glass-panel p-10 flex flex-col items-center justify-center border-b-2 border-b-transparent hover:border-b-accent transition-all">
+                        <div class="text-3xl font-bold text-white mb-2">89</div>
+                        <div class="text-[10px] tracking-widest text-accent uppercase font-bold">Performance</div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Contact -->
+            <section id="contact" class="py-40 mb-20">
+                <div class="glass-panel p-12 md:p-20 relative border-t-2 border-t-accent">
+                    <div class="grid md:grid-cols-2 gap-16">
+                        <div>
+                            <h2 class="text-3xl font-bold mb-6">TRANSMIT_SIGNAL</h2>
+                            <p class="text-gray-400 font-light mb-12 text-lg">
+                                Ready to launch your next venture? Connect via the secure frequency below.
+                            </p>
+                            <div class="space-y-6 font-mono text-sm">
+                                <div class="flex items-center gap-4">
+                                    <span class="text-accent">[SIG]</span>
+                                    <span>walkermule7@gmail.com</span>
+                                </div>
+                                <div class="flex items-center gap-4">
+                                    <span class="text-accent">[TEL]</span>
+                                    <span>+260971060265</span>
+                                </div>
+                                <div class="flex items-center gap-4">
+                                    <span class="text-accent">[LOC]</span>
+                                    <span>KITWE, ZAMBIA // CBU</span>
+                                </div>
+                                <div class="pt-4 flex gap-6">
+                                    <a href="https://github.com/GhostZero7" target="_blank" rel="noopener noreferrer" class="text-gray-500 hover:text-accent transition-colors"><i class="fa-brands fa-github text-lg"></i></a>
+                                    <a href="#" class="text-gray-500 hover:text-accent transition-colors"><i class="fa-brands fa-linkedin text-lg"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <form action="https://formspree.io/f/xwvroyzl" method="POST" class="space-y-6">
+                            <input type="text" name="name" placeholder="IDENTITY_TAG" required
+                                class="w-full bg-white/5 border border-white/10 p-4 text-sm focus:border-accent outline-none transition-all focus:bg-white/10" aria-label="Your Name">
+                            <input type="email" name="email" placeholder="COMM_CHANNEL (EMAIL)" required
+                                class="w-full bg-white/5 border border-white/10 p-4 text-sm focus:border-accent outline-none transition-all focus:bg-white/10" aria-label="Your Email">
+                            <textarea name="message" placeholder="MESSAGE_ENCODING" rows="4" required
+                                class="w-full bg-white/5 border border-white/10 p-4 text-sm focus:border-accent outline-none transition-all focus:bg-white/10" aria-label="Your Message"></textarea>
+                            <button type="submit" class="neon-button w-full font-bold">INITIATE_UPLINK</button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+
+            <footer
+                class="py-12 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-6 text-[10px] text-gray-500 font-mono tracking-[0.3em] uppercase">
+                <div>&copy; 2024 MULENGA MUSAMBA // DEEP_SPACE_OPS</div>
+                <div class="flex gap-10">
+                    <a href="#" class="hover:text-accent transition-colors">Satellite_X</a>
+                    <a href="#" class="hover:text-accent transition-colors">Core_Hub</a>
+                    <a href="#" class="hover:text-accent transition-colors">Void_Terminal</a>
+                </div>
+            </footer>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
