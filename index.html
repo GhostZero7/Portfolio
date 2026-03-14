@@ -240,31 +240,51 @@
                 <!-- TradeJournal Featured Project -->
                 <div class="glass-panel mt-12 relative overflow-hidden trade-journal-card">
                     <div class="absolute -right-8 -top-8 w-48 h-48 bg-accent/5 rounded-full blur-3xl"></div>
-                    <!-- Header -->
-                    <div class="p-8 pb-0 flex flex-wrap items-end justify-between gap-4">
-                        <div>
+                    <div class="tj-layout">
+                        <!-- Wave Gallery -->
+                        <div class="tj-gallery-col">
+                            <div class="tj-gallery-wrapper">
+                                <div class="tj-gallery-container" id="tj-gallery">
+                                    <div class="tj-item"><img src="TradeJournal project/WhatsApp Image 2026-03-15 at 1.21.07 AM (1).jpeg" alt="TradeJournal screen 1"></div>
+                                    <div class="tj-item"><img src="TradeJournal project/WhatsApp Image 2026-03-15 at 1.21.07 AM.jpeg" alt="TradeJournal screen 2"></div>
+                                    <div class="tj-item"><img src="TradeJournal project/WhatsApp Image 2026-03-15 at 1.21.08 AM (1).jpeg" alt="TradeJournal screen 3"></div>
+                                    <div class="tj-item"><img src="TradeJournal project/WhatsApp Image 2026-03-15 at 1.21.08 AM (2).jpeg" alt="TradeJournal screen 4"></div>
+                                    <div class="tj-item"><img src="TradeJournal project/WhatsApp Image 2026-03-15 at 1.21.08 AM.jpeg" alt="TradeJournal screen 5"></div>
+                                    <div class="tj-item"><img src="TradeJournal project/WhatsApp Image 2026-03-15 at 1.21.09 AM (1).jpeg" alt="TradeJournal screen 6"></div>
+                                    <div class="tj-item"><img src="TradeJournal project/WhatsApp Image 2026-03-15 at 1.21.09 AM.jpeg" alt="TradeJournal screen 7"></div>
+                                </div>
+                                <p class="text-[9px] text-gray-600 font-mono tracking-widest text-center pb-2">// HOVER_TO_EXPAND · CLICK_TO_VIEW</p>
+                            </div>
+                        </div>
+                        <!-- Info Panel -->
+                        <div class="tj-info-col">
                             <div class="text-[10px] text-accent font-bold mb-2 tracking-widest">REF: MOB-04 // FEATURED</div>
-                            <h3 class="text-white text-2xl font-bold tracking-tight">TRADE_JOURNAL</h3>
+                            <h3 class="text-white text-2xl font-bold tracking-tight mb-1">TRADE_JOURNAL</h3>
+                            <div class="text-[9px] text-accent/50 font-mono tracking-widest mb-5">STATUS: IN_DEVELOPMENT</div>
+                            <p class="text-sm text-gray-400 leading-relaxed mb-6">
+                                A full-stack trading journal built with Flutter and Firebase for active traders to log, track, and analyze performance. Auto-calculates P&amp;L across Forex, Gold, Crypto, Indices, and more — with a custom override for broker results.
+                            </p>
+                            <!-- Key features -->
+                            <div class="text-[10px] text-accent font-bold tracking-widest mb-3">// KEY_FEATURES</div>
+                            <ul class="space-y-2 text-[11px] text-gray-400 font-mono mb-6">
+                                <li><span class="text-accent mr-2">›</span>Real-time dashboard — equity, win rate, trade calendar</li>
+                                <li><span class="text-accent mr-2">›</span>Analytics — P&amp;L charts, drawdown, Sharpe ratio, heatmap</li>
+                                <li><span class="text-accent mr-2">›</span>Risk center — position sizing, daily risk monitoring</li>
+                                <li><span class="text-accent mr-2">›</span>Capital management — deposits, withdrawals, simulation</li>
+                                <li><span class="text-accent mr-2">›</span>PDF &amp; Excel export · Freemium + Google Play Billing</li>
+                                <li><span class="text-accent mr-2">›</span>Firebase Auth — email/password &amp; Google Sign-In</li>
+                            </ul>
+                            <!-- Tech stack -->
+                            <div class="text-[10px] text-accent font-bold tracking-widest mb-3">// TECH_STACK</div>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="border border-white/10 px-2 py-1 text-[9px] font-bold text-gray-500 uppercase tracking-widest">Flutter</span>
+                                <span class="border border-white/10 px-2 py-1 text-[9px] font-bold text-gray-500 uppercase tracking-widest">Firebase</span>
+                                <span class="border border-white/10 px-2 py-1 text-[9px] font-bold text-gray-500 uppercase tracking-widest">Firestore</span>
+                                <span class="border border-white/10 px-2 py-1 text-[9px] font-bold text-gray-500 uppercase tracking-widest">Provider</span>
+                                <span class="border border-white/10 px-2 py-1 text-[9px] font-bold text-gray-500 uppercase tracking-widest">fl_chart</span>
+                                <span class="border border-white/10 px-2 py-1 text-[9px] font-bold text-gray-500 uppercase tracking-widest">Cloud Fn</span>
+                            </div>
                         </div>
-                        <div class="flex flex-wrap gap-3 text-[9px] font-bold text-gray-500 uppercase tracking-widest">
-                            <span class="border border-white/10 px-2 py-1">Flutter</span>
-                            <span class="border border-white/10 px-2 py-1">Dart</span>
-                            <span class="border border-white/10 px-2 py-1">Mobile</span>
-                            <span class="text-accent/50 font-mono self-center ml-2">STATUS: IN_DEVELOPMENT</span>
-                        </div>
-                    </div>
-                    <!-- Wave Gallery -->
-                    <div class="tj-gallery-wrapper">
-                        <div class="tj-gallery-container" id="tj-gallery">
-                            <div class="tj-item"><img src="TradeJournal project/WhatsApp Image 2026-03-15 at 1.21.07 AM (1).jpeg" alt="TradeJournal screen 1"></div>
-                            <div class="tj-item"><img src="TradeJournal project/WhatsApp Image 2026-03-15 at 1.21.07 AM.jpeg" alt="TradeJournal screen 2"></div>
-                            <div class="tj-item"><img src="TradeJournal project/WhatsApp Image 2026-03-15 at 1.21.08 AM (1).jpeg" alt="TradeJournal screen 3"></div>
-                            <div class="tj-item"><img src="TradeJournal project/WhatsApp Image 2026-03-15 at 1.21.08 AM (2).jpeg" alt="TradeJournal screen 4"></div>
-                            <div class="tj-item"><img src="TradeJournal project/WhatsApp Image 2026-03-15 at 1.21.08 AM.jpeg" alt="TradeJournal screen 5"></div>
-                            <div class="tj-item"><img src="TradeJournal project/WhatsApp Image 2026-03-15 at 1.21.09 AM (1).jpeg" alt="TradeJournal screen 6"></div>
-                            <div class="tj-item"><img src="TradeJournal project/WhatsApp Image 2026-03-15 at 1.21.09 AM.jpeg" alt="TradeJournal screen 7"></div>
-                        </div>
-                        <p class="text-[9px] text-gray-600 font-mono tracking-widest text-center pb-4">// HOVER_TO_EXPAND · CLICK_TO_VIEW</p>
                     </div>
                 </div>
 

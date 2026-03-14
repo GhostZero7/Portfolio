@@ -477,6 +477,22 @@ h2,
     border-color: rgba(255, 45, 85, 0.3);
 }
 
+.tj-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.tj-gallery-col {
+    border-right: 1px solid rgba(255, 45, 85, 0.15);
+}
+
+.tj-info-col {
+    padding: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 .tj-gallery-wrapper {
     padding: 2rem 1.5rem 0.5rem;
     overflow: hidden;
@@ -613,6 +629,19 @@ h2,
 }
 
 @media (max-width: 768px) {
+    .tj-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .tj-gallery-col {
+        border-right: none;
+        border-bottom: 1px solid rgba(255, 45, 85, 0.15);
+    }
+
+    .tj-info-col {
+        padding: 1.5rem;
+    }
+
     .tj-gallery-container {
         height: 220px;
         gap: 4px;
