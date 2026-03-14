@@ -151,3 +151,22 @@ window.addEventListener('scroll', () => {
 resize();
 initStars();
 animate();
+
+// TradeJournal Wave Gallery - Modal
+(function () {
+    const items = document.querySelectorAll('.tj-item');
+    items.forEach(item => {
+        item.addEventListener('click', () => {
+            const src = item.querySelector('img').src;
+            document.getElementById('tj-modal-img').src = src;
+            const modal = document.getElementById('tj-modal');
+            modal.style.display = 'flex';
+        });
+    });
+})();
+
+function tjCloseModal() {
+    const modal = document.getElementById('tj-modal');
+    modal.style.display = 'none';
+    document.getElementById('tj-modal-img').src = '';
+}
