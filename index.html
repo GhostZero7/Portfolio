@@ -202,43 +202,8 @@
                     <h2 class="text-xl">02_MISSION_DATA</h2>
                     <div></div>
                 </div>
-                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    <!-- Project 1: Web Apps -->
-                    <div class="glass-panel p-8 group relative overflow-hidden">
-                        <div class="absolute -right-4 -top-4 w-24 h-24 bg-accent/5 rounded-full blur-2xl group-hover:bg-accent/20 transition-all"></div>
-                        <div class="text-[10px] text-accent font-bold mb-12">REF: WEB-01</div>
-                        <h3 class="text-white mb-3 text-xl font-bold tracking-tight">DYNAMIC_WEB_SYSTEMS</h3>
-                        <p class="text-sm text-gray-400 mb-8 leading-relaxed">High-performance, responsive web applications built for the modern edge.</p>
-                        <div class="flex gap-4 text-[9px] font-bold text-gray-500 uppercase tracking-widest">
-                            <span>React</span> <span>Node.js</span> <span>FastAPI</span>
-                        </div>
-                    </div>
-
-                    <!-- Project 2: Mobile Apps -->
-                    <div class="glass-panel p-8 group relative overflow-hidden">
-                        <div class="absolute -right-4 -top-4 w-24 h-24 bg-accent/5 rounded-full blur-2xl group-hover:bg-accent/20 transition-all"></div>
-                        <div class="text-[10px] text-accent font-bold mb-12">REF: MOB-02</div>
-                        <h3 class="text-white mb-3 text-xl font-bold tracking-tight">MOBILE_FLIGHT_UNITS</h3>
-                        <p class="text-sm text-gray-400 mb-8 leading-relaxed">Cross-platform mobile experiences with fluid UI and robust offline capabilities.</p>
-                        <div class="flex gap-4 text-[9px] font-bold text-gray-500 uppercase tracking-widest">
-                            <span>Flutter</span> <span>Dart</span> <span>Firebase</span>
-                        </div>
-                    </div>
-
-                    <!-- Project 3: SaaS -->
-                    <div class="glass-panel p-8 group relative overflow-hidden">
-                        <div class="absolute -right-4 -top-4 w-24 h-24 bg-accent/5 rounded-full blur-2xl group-hover:bg-accent/20 transition-all"></div>
-                        <div class="text-[10px] text-accent font-bold mb-12">REF: SAS-03</div>
-                        <h3 class="text-white mb-3 text-xl font-bold tracking-tight">SAAS_ORBITALS</h3>
-                        <p class="text-sm text-gray-400 mb-8 leading-relaxed">Scalable software-as-a-service architectures designed for multi-tenant efficiency.</p>
-                        <div class="flex gap-4 text-[9px] font-bold text-gray-500 uppercase tracking-widest">
-                            <span>Next.js</span> <span>Docker</span> <span>PostgreSQL</span>
-                        </div>
-                    </div>
-                </div>
-
                 <!-- TradeJournal Featured Project -->
-                <div class="glass-panel mt-12 relative overflow-hidden trade-journal-card">
+                <div class="glass-panel relative overflow-hidden trade-journal-card">
                     <div class="absolute -right-8 -top-8 w-48 h-48 bg-accent/5 rounded-full blur-3xl"></div>
                     <div class="tj-layout">
                         <!-- Wave Gallery -->
@@ -292,6 +257,51 @@
                 <div id="tj-modal" class="tj-modal-overlay" style="display:none;" onclick="tjCloseModal()">
                     <button class="tj-close-btn" onclick="tjCloseModal()">&#x2715; CLOSE</button>
                     <img id="tj-modal-img" src="" alt="Full screen" class="tj-modal-img">
+                </div>
+
+                <!-- MoTrack Project -->
+                <div class="glass-panel mt-8 relative overflow-hidden trade-journal-card">
+                    <div class="absolute -left-8 -top-8 w-48 h-48 bg-accent/5 rounded-full blur-3xl"></div>
+                    <div class="tj-layout">
+                        <!-- Wave Gallery -->
+                        <div class="tj-gallery-col">
+                            <div class="tj-gallery-wrapper">
+                                <div class="tj-gallery-container" id="mt-gallery">
+                                    <div class="tj-item"><img src="motrack/WhatsApp Image 2026-03-15 at 1.59.13 AM.jpeg" alt="MoTrack screen 1"></div>
+                                    <div class="tj-item"><img src="motrack/WhatsApp Image 2026-03-15 at 1.59.14 AM (1).jpeg" alt="MoTrack screen 2"></div>
+                                    <div class="tj-item"><img src="motrack/WhatsApp Image 2026-03-15 at 1.59.14 AM.jpeg" alt="MoTrack screen 3"></div>
+                                    <div class="tj-item"><img src="motrack/WhatsApp Image 2026-03-15 at 1.59.15 AM.jpeg" alt="MoTrack screen 4"></div>
+                                </div>
+                                <p class="text-[9px] text-gray-600 font-mono tracking-widest text-center pb-2">// HOVER_TO_EXPAND · CLICK_TO_VIEW</p>
+                            </div>
+                        </div>
+                        <!-- Info Panel -->
+                        <div class="tj-info-col">
+                            <div class="text-[10px] text-accent font-bold mb-2 tracking-widest">REF: MOB-05</div>
+                            <h3 class="text-white text-2xl font-bold tracking-tight mb-1">MOTRACK</h3>
+                            <div class="text-[9px] text-accent/50 font-mono tracking-widest mb-5">STATUS: IN_DEVELOPMENT</div>
+                            <p class="text-sm text-gray-400 leading-relaxed mb-6">
+                                A Flutter mobile app that automatically tracks mobile money transactions by reading SMS messages from MTN, Airtel, and Zamtel. No manual entry — MoTrack parses your messages, categorizes spending, and gives you a clear picture of where your money goes.
+                            </p>
+                            <div class="text-[10px] text-accent font-bold tracking-widest mb-3">// KEY_FEATURES</div>
+                            <ul class="space-y-2 text-[11px] text-gray-400 font-mono mb-6">
+                                <li><span class="text-accent mr-2">›</span>Auto SMS parsing across MTN, Airtel &amp; Zamtel</li>
+                                <li><span class="text-accent mr-2">›</span>Spending insights — daily, weekly, monthly, yearly</li>
+                                <li><span class="text-accent mr-2">›</span>Interactive real-time financial dashboard</li>
+                                <li><span class="text-accent mr-2">›</span>PIN-based security with local Hive storage</li>
+                                <li><span class="text-accent mr-2">›</span>Light/dark theme with persistent preferences</li>
+                            </ul>
+                            <div class="text-[10px] text-accent font-bold tracking-widest mb-3">// TECH_STACK</div>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="border border-white/10 px-2 py-1 text-[9px] font-bold text-gray-500 uppercase tracking-widest">Flutter</span>
+                                <span class="border border-white/10 px-2 py-1 text-[9px] font-bold text-gray-500 uppercase tracking-widest">Dart</span>
+                                <span class="border border-white/10 px-2 py-1 text-[9px] font-bold text-gray-500 uppercase tracking-widest">Provider</span>
+                                <span class="border border-white/10 px-2 py-1 text-[9px] font-bold text-gray-500 uppercase tracking-widest">Hive</span>
+                                <span class="border border-white/10 px-2 py-1 text-[9px] font-bold text-gray-500 uppercase tracking-widest">fl_chart</span>
+                                <span class="border border-white/10 px-2 py-1 text-[9px] font-bold text-gray-500 uppercase tracking-widest">Regex SMS</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </section>
 
