@@ -296,7 +296,7 @@
                                 <li><span class="text-accent mr-2">›</span>Light/dark theme with persistent preferences</li>
                             </ul>
                             <div class="text-[10px] text-accent font-bold tracking-widest mb-3">// TECH_STACK</div>
-                            <div class="flex flex-wrap gap-2">
+                            <div class="flex flex-wrap gap-2 mb-6">
                                 <span class="border border-white/10 px-2 py-1 text-[9px] font-bold text-gray-500 uppercase tracking-widest">Flutter</span>
                                 <span class="border border-white/10 px-2 py-1 text-[9px] font-bold text-gray-500 uppercase tracking-widest">Dart</span>
                                 <span class="border border-white/10 px-2 py-1 text-[9px] font-bold text-gray-500 uppercase tracking-widest">Provider</span>
@@ -304,6 +304,74 @@
                                 <span class="border border-white/10 px-2 py-1 text-[9px] font-bold text-gray-500 uppercase tracking-widest">fl_chart</span>
                                 <span class="border border-white/10 px-2 py-1 text-[9px] font-bold text-gray-500 uppercase tracking-widest">Regex SMS</span>
                             </div>
+                            <button onclick="document.getElementById('motrack-privacy-modal').style.display='flex'" class="border border-accent/30 px-4 py-2 text-[9px] font-bold tracking-widest text-accent hover:bg-accent/10 transition-all uppercase">
+                                // Privacy_Policy
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- MoTrack Privacy Policy Modal -->
+                <div id="motrack-privacy-modal" class="tj-modal-overlay" style="display:none;" onclick="if(event.target===this)this.style.display='none'">
+                    <button class="tj-close-btn" onclick="document.getElementById('motrack-privacy-modal').style.display='none'">&#x2715; CLOSE</button>
+                    <div class="privacy-modal-content">
+                        <div class="text-[10px] text-accent font-bold tracking-widest mb-1">REF: MOB-05 // LEGAL</div>
+                        <h2 class="text-white text-xl font-bold tracking-tight mb-1">MOTRACK // PRIVACY_POLICY</h2>
+                        <div class="text-[10px] text-gray-500 font-mono mb-6">Last updated: March 24, 2026</div>
+
+                        <div class="privacy-section">
+                            <div class="privacy-label">01_OVERVIEW</div>
+                            <p>MoTrack is a personal finance tracking app built for Zambia. It reads mobile money SMS notifications from Airtel Money and Zamtel to automatically track your transactions, spending patterns, and financial insights. Your privacy is the foundation this app is built on.</p>
+                        </div>
+
+                        <div class="privacy-section">
+                            <div class="privacy-label">02_DATA_ACCESS</div>
+                            <p>MoTrack requests permission to read SMS messages on your device. This access is used exclusively to detect and parse mobile money transaction notifications from Airtel Money and Zamtel — specifically amounts, dates, and recipient references.</p>
+                        </div>
+
+                        <div class="privacy-section">
+                            <div class="privacy-label">03_DATA_USAGE</div>
+                            <ul class="privacy-list">
+                                <li><span class="text-accent mr-2">›</span>SMS messages are read and processed entirely on your device</li>
+                                <li><span class="text-accent mr-2">›</span>Only financial transaction data is extracted and stored locally</li>
+                                <li><span class="text-accent mr-2">›</span>Used solely to display transaction history, analytics, and summaries</li>
+                                <li><span class="text-accent mr-2">›</span>Personal conversations and non-financial SMS are never read or stored</li>
+                            </ul>
+                        </div>
+
+                        <div class="privacy-section">
+                            <div class="privacy-label">04_DATA_STORAGE</div>
+                            <p>All data is stored locally on your device using an encrypted local database. Nothing is transmitted to any external server, cloud service, or third party. MoTrack has no backend — no account, no remote login, no data sync.</p>
+                        </div>
+
+                        <div class="privacy-section">
+                            <div class="privacy-label">05_DATA_SHARING</div>
+                            <p>We do not sell, share, rent, or transmit your data to any third party under any circumstances. Your financial data never leaves your device.</p>
+                        </div>
+
+                        <div class="privacy-section">
+                            <div class="privacy-label">06_DATA_DELETION</div>
+                            <p>You can permanently delete all data at any time from within the app under <span class="text-accent">Settings → Clear All Data</span>. Uninstalling the app also removes all locally stored data.</p>
+                        </div>
+
+                        <div class="privacy-section">
+                            <div class="privacy-label">07_PERMISSIONS</div>
+                            <p><span class="text-accent">READ_SMS</span> — required to detect mobile money transaction notifications. This is the core functionality of the app. Without this permission the app cannot function.</p>
+                        </div>
+
+                        <div class="privacy-section">
+                            <div class="privacy-label">08_CHILDREN</div>
+                            <p>MoTrack is not directed at children under the age of 13 and does not knowingly collect data from minors.</p>
+                        </div>
+
+                        <div class="privacy-section">
+                            <div class="privacy-label">09_POLICY_CHANGES</div>
+                            <p>If this policy is updated, the new version will be published at this URL with a revised date at the top.</p>
+                        </div>
+
+                        <div class="privacy-section">
+                            <div class="privacy-label">10_CONTACT</div>
+                            <p>For any questions about this privacy policy or how MoTrack handles your data, contact: <span class="text-accent">walkermule7@gmail.com</span></p>
                         </div>
                     </div>
                 </div>
