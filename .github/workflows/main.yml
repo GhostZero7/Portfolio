@@ -1,0 +1,33 @@
+name: Conditional CI/CD
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build-and-deliver:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      # THIS ALWAYS RUNS (CI)
+      - name: Run a simple test
+        run: echo "Running tests... Passed!"
+
+      # THIS ONLY RUNS ON MAIN BRANCH (CD)
+      - name: Create a fake build file
+        if: github.ref == 'refs/heads/main' && github.event_name == 'push'
+        run: |
+          mkdir build_output
+          echo "This is a real app file for main branch!" > build_output/my-app.txt
+
+      # THIS ONLY RUNS ON MAIN BRANCH (CD)
+      - name: Upload the build file
+        if: github.ref == 'refs/heads/main' && github.event_name == 'push'
+        uses: actions/upload-artifact@v4
+        with:
+          name: my-app-build
+          path: build_output/my-app.txt
